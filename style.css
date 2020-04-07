@@ -6,3 +6,9 @@ h1 {
 body {
 	background-color: pink
 }
+
+img {
+	width: 50px;
+	hiehgt: 50px;
+	margin: 10px;
+}
