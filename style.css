@@ -13,7 +13,7 @@ h2 {
 }
 
 body {
-	background-color: pink;
+    background-image: linear-gradient(pink, #f6cf89, #ff5774);
 }
 
 /*.container {
