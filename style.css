@@ -16,16 +16,13 @@ body {
 }
 
 img {
-	width: 500px;
+	width: 600px;
 	hiehgt: 500px;
-	margin: 5px;
-	border: 5px solid rosybrown;
+	margin: 30px;
+	border: 5px solid #8d6565;
 	transition: all 1s;
 }
 
 img:hover {
-	transform: scale(1,1);
+	transform: scale(1.5);
 }
-
-
-
