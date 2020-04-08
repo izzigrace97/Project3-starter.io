@@ -16,15 +16,21 @@ body {
 	background-color: pink;
 }
 
-.container {
+/*.container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+} */
+
+.container-cake-img, .container-brownie-img, .container-cookies-img, .container-loaf-img {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 img {
-	width: 500px;
-	hiehgt: 500px;
+	width: 400px;
+	height: 400px;
 	margin: 10px;
 	border: 5px solid #8d6565;
 	transition: all 1s;
