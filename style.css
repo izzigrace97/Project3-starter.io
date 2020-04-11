@@ -71,7 +71,7 @@ body {
 	border: 5px solid #8d6565;
 }
 */
-img {
+.image {
 	width: 400px;
 	height: 400px;
 	margin: 10px;
@@ -79,7 +79,7 @@ img {
 	transition: all 1s;
 }
 
-img:hover {
+.image:hover {
 	transform: scale(1.1);
 }
 
