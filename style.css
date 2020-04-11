@@ -47,6 +47,12 @@ body {
 	justify-content: center;
 } */
 
+.logo-photo {
+	height: 200px;
+	width: 400px;
+	float: right;
+}
+
 .container-cake-img, .container-brownie-img, .container-cookies-img, .container-loaf-img {
 	display: flex;
 	flex-wrap: wrap;
@@ -58,13 +64,13 @@ body {
 	justify-content: center;
 }
 
-video {
+/*video {
 	width: 400px;
 	height: 400px;
 	margin: 10px;
 	border: 5px solid #8d6565;
 }
-
+*/
 img {
 	width: 400px;
 	height: 400px;
