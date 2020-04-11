@@ -3,7 +3,7 @@ h1 {
 	font-family: 'Georgina', sans-serif;
 	font-size: 5rem;
 	color: brown;
-	margin: 10px 0px 0px 10px;
+	margin: 10px 0px 10px 10px;
 }
 
 h2 {
@@ -28,6 +28,7 @@ ul {
 
 li {
   float: left;
+  font-size: 20px;
 }
 
 li a {
