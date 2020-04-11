@@ -3,6 +3,7 @@ h1 {
 	font-family: 'Georgina', sans-serif;
 	font-size: 5rem;
 	color: brown;
+	margin: 10px 0px 0px 10px;
 }
 
 h2 {
@@ -48,9 +49,9 @@ body {
 } */
 
 .logo-photo {
-	height: 200px;
+	height: 100px;
 	width: 400px;
-	float: right;
+	float: top right;
 }
 
 .container-cake-img, .container-brownie-img, .container-cookies-img, .container-loaf-img {
