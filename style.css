@@ -66,30 +66,9 @@ body {
 	justify-content: space-evenly;
 }
 
-.container {
-	display: grid;
-	gap: 20px;
-	/*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: 1fr;
-}
-
-.imagee {
-    cursor:pointer;
-    text-align: center;
-    font-size:10em;
-    border-radius:4px;
-    border:2px solid #ae7e7e;
-    transition: all 0.3s linear;
-}
-
 img {
 	height: 300px;
 	width: 300px;
-}
-
-.imagee:hover {
-	box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 .video {
@@ -97,14 +76,6 @@ img {
 	justify-content: center;
 }
 
-
-/*video {
-	width: 400px;
-	height: 400px;
-	margin: 10px;
-	border: 5px solid #8d6565;
-}
-*/
 .image {
 	width: 400px;
 	height: 400px;
