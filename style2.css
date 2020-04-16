@@ -1,8 +1,10 @@
 body {
-    margin: auto 0;
+    margin: 0 auto;
+    font-family: Arial;
 }
 
 .zone {
+    /*padding:30px 50px;*/
     cursor:pointer;
     color:#FFF;
     font-size:2em;
@@ -18,95 +20,101 @@ body {
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
-.fb {
+/***********************************************************************
+ *  Nav Bar
+ **********************************************************************/
+.main-nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    font-size: 3em;
-    font-family: monospace 
+    list-style: none;
+    margin: 0;
+    font-size: 0.7em;
 }
-
-.gd {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 20px;
-}
-
-.box > img {
-    width: 100%;
-    transition: all 0.3s linear;  
-}
-
-.box > img:hover {
-    transform: rotate(360deg);
-}
-
-.box {
-    background-color: black;
-    padding: 130px;
-    margin: 20px;
-    transition: all 0.3s linear;
-}
-
-.box:hover {
-   box-shadow: rgba(19, 0, 75, 0.8) 0px 5px 15px, inset rgba(10, 158, 198, 0.15) 0px -10px 20px; 
-}
-
-footer {
-	text-align: center;
-	font-family: monospace;
-}
-
-/*img {
-    display: flex;
-    height: 150px;
-    width: 150px;
-    place-self:center;
-    margin: 10px;
-}*/
 
 @media only screen and (max-width: 600px) {
-    ul {
+    .main-nav {
         font-size: 0.5em;
         padding: 0;
     }
 }
 
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+.push {
+    margin-left: auto;
 }
 
 li {
-    float: left;
-    font-size: 20px;
+    padding: 20px;
 }
 
-li a {
-    display: block;
-    color: black;
+a {
+    color: #f5f5f6;
     text-decoration: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/***********************************************************************
+ *  Cover
+ **********************************************************************/
+.container {
+    /*show heigh: auto*/
+    height: 70vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    width: 30rem;
+}
+
+/***********************************************************************
+ *  Grid Panel
+ **********************************************************************/
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+}
+
+.box {
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box:hover {
+    -webkit-transform: rotate(-7deg);
+    -moz-transform: rotate(-7deg);
+    -o-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+}
+
+.box > img {
+    width: 100%;
+    height: auto;
+}
+
+/***********************************************************************
+ *  Footer
+ **********************************************************************/
+footer {
     text-align: center;
-    padding: 14px 16px;
-    font-family: monospace 
-}
-
-li:last-child {
-    float: right;
-}
-
-li:hover {
-    background-color: greenyellow;
+    background-color: #444;
 }
 
 /*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
 /***********************************************************************
  *  Green Background
  **********************************************************************/
-.green{
+.green {
     background: #56B870; /* Old browsers */
     background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
@@ -119,7 +127,7 @@ li:hover {
 /***********************************************************************
  *  Red Background
  **********************************************************************/
-.red{
+.red {
     background: #C655BE; /* Old browsers */
     background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
@@ -132,7 +140,7 @@ li:hover {
 /***********************************************************************
  *  Yellow Background
  **********************************************************************/
-.yellow{
+.yellow {
     background: #F3AAAA; /* Old browsers */
     background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
@@ -145,7 +153,7 @@ li:hover {
 /***********************************************************************
  *  Blue Background
  **********************************************************************/
-.blue{
+.blue {
     background: #7abcff; /* Old browsers */
     background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
@@ -154,3 +162,4 @@ li:hover {
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
+
